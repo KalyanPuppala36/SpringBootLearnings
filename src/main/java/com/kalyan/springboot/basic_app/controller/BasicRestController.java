@@ -10,4 +10,14 @@ public class BasicRestController {
     public String sayHello() {
         return "Hello World!";
     }
+
+    @GetMapping("/github")
+    public String getAuthorGithub() {
+        return "<a href='https://github.com/KalyanPuppala36'>MyGithub</a>";
+    }
+
+    @GetMapping("/message")
+    public String getMessage() {
+        return "Hello all;";
+    }
 }
